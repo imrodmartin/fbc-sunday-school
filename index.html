@@ -25,9 +25,10 @@
 
     .hero {
       min-height: 100vh;
+      min-height: 100dvh;
       display: grid;
-      place-items: start center;
-      padding: clamp(2rem, 5vw, 4rem) 1.25rem;
+      place-items: center;
+      padding: clamp(1rem, 4vh, 4rem) 1.25rem;
       text-align: center;
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.464), rgba(0, 0, 0, 0.416)),
@@ -47,7 +48,7 @@
     }
 
     h1 {
-      font-size: clamp(1.6rem, 6vw, 6.5rem);
+      font-size: clamp(1.4rem, min(6vw, 8vh), 6.5rem);
       font-weight: 900;
       letter-spacing: -0.04em;
       margin-bottom: 0.4rem;
@@ -55,14 +56,14 @@
     }
 
     h2 {
-      font-size: clamp(2.3rem, 5vw, 4.4rem);
+      font-size: clamp(1.6rem, min(5vw, 6.5vh), 4.4rem);
       font-weight: 900;
-      margin-bottom: 1.4rem;
+      margin-bottom: clamp(0.6rem, 2vh, 1.4rem);
     }
 
     .class-list {
       display: grid;
-      gap: clamp(1.25rem, 2.5vw, 2rem);
+      gap: clamp(0.75rem, min(2.5vw, 3vh), 2rem);
       margin-inline: auto;
     }
 
@@ -71,13 +72,13 @@
     }
 
     h3 {
-      font-size: clamp(1.9rem, 4vw, 3.7rem);
+      font-size: clamp(1.3rem, min(4vw, 5.5vh), 3.7rem);
       font-weight: 900;
       margin-bottom: 0.3rem;
     }
 
     h4 {
-      font-size: clamp(1.15rem, 2.5vw, 2rem);
+      font-size: clamp(0.95rem, min(2.5vw, 3vh), 2rem);
       font-weight: 800;
     }
 
